@@ -1,0 +1,29 @@
+{
+  "presets": [
+    "flow",
+    [
+      "env",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": [
+    "syntax-dynamic-import",
+    "transform-object-rest-spread",
+    [
+      "transform-class-properties",
+      {
+        "spec": true
+      }
+    ],
+    [
+      "transform-regenerator",
+      {
+        "asyncGenerators": true,
+        "generators": true,
+        "async": true
+      }
+    ]
+  ]
+}

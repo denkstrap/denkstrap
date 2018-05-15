@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+
+# Old Scripts
+__*.js
+
+# Temporary files
+.DS_Store
+
+# Node modules
+node_modules
+
+# Sass cache
+.sass-cache
+
+Webpack Cache
+.cache-loader
+
+# Grunt intermediate storage
+.grunt
+
+# Artifacts folder with generated content
+artifacts
+
+# sass-globbing
+src/components/sass/import
+
+# lodash build files
+src/components/app/vendor/lodash.build.js
+src/components/app/vendor/lodash.build.min.js
+
+# Generated distribution files
+dist
+
+# PhpStorm/Webstorm project files
+.idea
+
+# netbeans
+nbproject
