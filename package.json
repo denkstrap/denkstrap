@@ -1,13 +1,13 @@
 {
-  "name": "denkstrap-structure",
-  "description": "denkwerk default structure for new projects",
+  "name": "denkstrap",
+  "description": "denkstrap boilerplate",
   "version": "3.0.0-alpha.1",
   "author": "Matthias Permien <matthias.permien@denkwerk.com",
   "homepage": "http://www.denkwerk.com",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/denkwerk/denkstrap-structure.git"
+    "url": "git@github.com:denkstrap/denkstrap.git"
   },
   "contributors": [
     "Matthias Permien <matthias.permien@denkwerk.com>",
