@@ -39,5 +39,5 @@ lint:
 lint_ci:
     description: 'Linting task for the CI server'
     tasks:
-        - 'csslint:production'
+#        - 'csslint:production'
         - 'eslint:ci'
