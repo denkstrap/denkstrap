@@ -19,7 +19,7 @@ production:
         - 'clean:dist'
         - 'sass:production'
         - 'postcss:autoprefixer'
-        - 'requirejs:production'
+#        - 'requirejs:production'
         - 'nunjuckr:production'
 
 prod:
@@ -30,17 +30,14 @@ prod:
 lint:
     description: 'Linting task for development'
     tasks:
-#        - 'jshint:grunt' // use ESLint only? -- https://www.slant.co/versus/8627/8628/~jshint_vs_eslint
-#        - 'jscs:grunt'
+        - 'eslint:grunt'
         - 'stylelint:scss'
 #        - 'scsslint:scss' // not needed- we use stylelint
 #        - 'csslint:development' // not needed- we decided to use stylelint only
-#        - 'jshint:frontend'
-#        - 'jscs:frontend'
+        - 'eslint:frontend'
 
 lint_ci:
     description: 'Linting task for the CI server'
     tasks:
         - 'csslint:production'
-#        - 'jshint:ci'
-#        - 'jscs:ci'
+        - 'eslint:ci'
