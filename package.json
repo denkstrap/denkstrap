@@ -28,7 +28,7 @@
     "start:production": "webpack-dev-server --content-base dist/ --port 8001 --compress --mode production"
   },
   "dependencies": {
-    "@denkstrap/core": "^3.0.0-aplha.1",
+    "@denkstrap/core": "^3.0.0-alpha.1",
     "autoprefixer": "^7.1.6",
     "babel-cli": "^6.23.0",
     "babel-core": "^6.26.3",
