@@ -15,9 +15,9 @@ export default class ExampleModule4 extends Component {
         Event.on( 'test.test1', () => console.log( 'test.test' ) );
         Event.on( 'test.test1.test2', () => console.log( 'test.test.test' ) );
 
-        setTimeout(() => Event.trigger( 'test' ), 0 );
-        setTimeout(() => Event.trigger( 'test.test1' ), 0 );
-        setTimeout(() => Event.trigger( 'test.test1.test2' ), 0 );
+        setTimeout( () => Event.trigger( 'test' ), 0 );
+        setTimeout( () => Event.trigger( 'test.test1' ), 0 );
+        setTimeout( () => Event.trigger( 'test.test1.test2' ), 0 );
     }
 
     paint() {

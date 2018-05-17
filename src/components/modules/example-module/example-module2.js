@@ -5,13 +5,13 @@ let timer = 1050;
 export default class ExampleModule2 extends ExampleModule {
 
     paint() {
-        return new Promise(resolve => {
+        return new Promise( resolve => {
             this.$element.style.color = 'blue';
 
-            setTimeout(() => {
+            setTimeout( () => {
                 resolve( 'example-module' );
             }, timer += 50 );
-        });
+        } );
     }
 
 }

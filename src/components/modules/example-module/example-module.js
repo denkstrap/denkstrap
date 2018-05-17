@@ -18,7 +18,7 @@ export default class ExampleModule extends Component {
 
     paint() {
         console.log( 'example-module' );
-        return new Promise( (resolve, reject) => {
+        return new Promise( ( resolve, reject ) => {
             this.$element.style.borderLeft = '10px solid red';
 
             setTimeout( () => {
