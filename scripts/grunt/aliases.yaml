@@ -1,3 +1,9 @@
+default:
+    description: 'Development'
+    tasks:
+        - 'clean:dist'
+        - 'watch'
+
 development:
     description: 'Development build task'
     tasks:
@@ -19,7 +25,6 @@ production:
         - 'clean:dist'
         - 'sass:production'
         - 'postcss:autoprefixer'
-#        - 'requirejs:production'
         - 'nunjuckr:production'
 
 prod:
@@ -27,17 +32,26 @@ prod:
     tasks:
         - 'production'
 
+stylesDev:
+    description: 'Shortcut for stylesDevelopment task'
+    tasks:
+        - 'sass:development'
+        - 'postcss:cssDevelopment'
+
+stylesProd:
+    description: 'Shortcut for stylesProduction task'
+    tasks:
+        - 'sass:production'
+        - 'postcss:cssProduction'
+
 lint:
     description: 'Linting task for development'
     tasks:
         - 'eslint:grunt'
         - 'stylelint:scss'
-#        - 'scsslint:scss' // not needed- we use stylelint
-#        - 'csslint:development' // not needed- we decided to use stylelint only
         - 'eslint:frontend'
 
 lint_ci:
     description: 'Linting task for the CI server'
     tasks:
-        - 'csslint:production'
         - 'eslint:ci'

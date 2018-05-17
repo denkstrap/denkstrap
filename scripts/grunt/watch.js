@@ -4,18 +4,23 @@
  */
 module.exports = {
     options: {
-        nospawn: false
+        spawn: false,
+        livereload: true,
+        atBegin: true
     },
+
     sass: {
+        options: {
+            event: [ 'added', 'deleted', 'changed' ]
+        },
         files: [
             '<%= srcPath %>**/*.scss'
         ],
         tasks: [
-            'sass:development'
-        ],
-        options: {
-            atBegin: true
-        }
+            'newer:stylelint:scss',
+            'sass:development',
+            'postcss:cssDevelopment'
+        ]
     },
 
     html: {
@@ -24,10 +29,7 @@ module.exports = {
         ],
         tasks: [
             'nunjuckr:development'
-        ],
-        options: {
-            atBegin: true
-        }
+        ]
     }
 
 };
