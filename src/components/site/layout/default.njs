@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>denkstrap-structure | {% block pageTitle %}{% endblock %}</title>
+    <title>denkstrap | {% block pageTitle %}{% endblock %}</title>
 
     <link rel="stylesheet" href="/css/main.css">
     <script type="text/javascript" src="/js/main.bundle.js" async></script>

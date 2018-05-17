@@ -1,4 +1,4 @@
-# denkstrap-structure
+# denkstrap
 
 # UNDER CONSTRUCTION - NOT USEABLE YET!
 
