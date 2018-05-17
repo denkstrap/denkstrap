@@ -24,7 +24,7 @@ var ComponentsLoader = require( 'nunjucks' ).Loader.extend( {
                 var file = files.pop();
 
                 while ( file !== undefined  ) {
-                    var componentName = camelcase( file.match( /^[\w\-]+/ )[ 0 ] );
+                    var componentName = camelcase( file.match( /^[\w-]+/ )[ 0 ] );
 
                     loadingSrc += '{% import "' + componentsPath + '/' + file + '" as ' + componentName + ' %}\n';
                     loadingSrc += '{% set ' + componentName + ' = ' + componentName + ' %}\n';

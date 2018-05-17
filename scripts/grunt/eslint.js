@@ -1,6 +1,6 @@
 /**
- * Grunt JSHint plugin
- * https://github.com/gruntjs/grunt-contrib-jshint
+ * Grunt ESLint plugin
+ * https://github.com/sindresorhus/grunt-eslint
  */
 module.exports = {
     frontend: [
@@ -15,14 +15,15 @@ module.exports = {
     ],
     ci: {
         options: {
-            force: true,
-            reporter: 'jslint',
-            reporterOutput: '<%= testResultPath %>jshint-lint-report.jslint.xml'
+            format: 'checkstyle',
+            outputFile: '<%= testResultPath %>eslint-lint-report.checkstyle.xml',
+            quiet: true
         },
         files: {
             src: [
                 '<%= srcPath %>**/*.js',
                 '<%= gruntPath %>**/*.js',
+                '!<%= srcPath %>components/app/vendor/**/*.js',
                 'Gruntfile.js'
             ]
         }
