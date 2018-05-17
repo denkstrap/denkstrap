@@ -9,7 +9,7 @@ development:
     tasks:
         - 'clean:dist'
         - 'sass:development'
-        - 'postcss:autoprefixer'
+        - 'postcss:cssDevelopment'
         - 'lint'
         - 'copy:js'
         - 'nunjuckr:development'
@@ -24,7 +24,7 @@ production:
     tasks:
         - 'clean:dist'
         - 'sass:production'
-        - 'postcss:autoprefixer'
+        - 'postcss:cssProduction'
         - 'nunjuckr:production'
 
 prod:
