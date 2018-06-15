@@ -1,4 +1,5 @@
-const env = process.env.NODE_ENV;
+// fallback env to development if NODE_ENV is undefined
+const env = process.env.NODE_ENV || 'development';
 
 module.exports = {
     paths: {
