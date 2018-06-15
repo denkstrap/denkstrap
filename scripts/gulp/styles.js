@@ -1,3 +1,4 @@
 const gulp = require( 'gulp' );
 
-gulp.task( 'stylesheets', ['sass', 'postcss'] );
+// shortcut for stylesheet related tasks
+gulp.task( 'stylesheets', [ 'sass', 'postcss' ] );

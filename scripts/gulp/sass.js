@@ -5,13 +5,9 @@ const gulpif = require( 'gulp-if' );
 const global = require( './_config' );
 
 const sassConfig = {
-    options: {
-        importer: require( 'node-sass-globbing' )
-    },
     development: {},
     production: {
         options: {
-            importer: require( 'node-sass-globbing' ),
             outputStyle: 'compressed'
         }
     }
@@ -20,14 +16,14 @@ const sassConfig = {
 gulp.task( 'sass', () => {
     const options = global.env.production ? sassConfig.production : sassConfig.development;
 
-    gulp.src( './src/components/sass/main.scss' )
+    gulp.src( `${global.paths.dev}/components/sass/main.scss` )
         .pipe( gulpif( !global.env.production, sourcemaps.init() ) )
         .pipe(
             sass( {
-                ...sassConfig.options,
+                importer: require( 'node-sass-globbing' ),
                 ...options
             } ).on( 'error', sass.logError )
         )
         .pipe( gulpif( !global.env.production, sourcemaps.write( './' ) ) )
-        .pipe( gulp.dest( './dist/css' ) );
+        .pipe( gulp.dest( `${global.paths.dist}/css` ) );
 } );
