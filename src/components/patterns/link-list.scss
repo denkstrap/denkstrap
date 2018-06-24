@@ -1,0 +1,14 @@
+.link-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-list__link {
+    color: $link-color-main;
+    padding: .25em;
+}
+
+.link-list__link:hover {
+    color: $link-color-hover;
+}
