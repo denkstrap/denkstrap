@@ -30,6 +30,14 @@ module.exports = {
         tasks: [
             'nunjuckr:development'
         ]
-    }
+    },
 
+    static: {
+        files: [
+            '<%= srcPath %>static/**/*.*'
+        ],
+        tasks: [
+            'copy:static'
+        ]
+    }
 };

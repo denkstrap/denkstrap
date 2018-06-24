@@ -4,15 +4,12 @@
  */
 
 module.exports = {
-
-    js: {
+    static: {
         expand: true,
-        cwd: '<%= srcPath %>components/',
+        cwd: '<%= srcPath %>static/',
         src: [
-            '**/*.js',
-            '!**/*.spec.js'
+            '**/*.*'
         ],
-        dest: '<%= distPath %>js/'
+        dest: '<%= distPath %>static/'
     }
-
 };
