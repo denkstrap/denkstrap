@@ -54,3 +54,4 @@ lint_ci:
     description: 'Linting task for the CI server'
     tasks:
         - 'eslint:ci'
+        - 'stylelint:ci'
