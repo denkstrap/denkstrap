@@ -4,7 +4,7 @@
     <div class="hello-denkstrap">
         <h2 class="hello-denkstrap__headline">Hello World! </h2>
         <div class="hello-denkstrap__image">
-            <svg width="167" height="33" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="preserveAspectRatio"
+            <svg width="167" height="33" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax meet"
                  viewBox="0 0 167 33">
                 <g stroke-width="5" fill="none" fill-rule="evenodd">
                     <path d="M104.5 4.738L88.496 30.5h32.008L104.5 4.738z" stroke="#33B8BD"/>
